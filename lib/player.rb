@@ -5,4 +5,12 @@ class Player
     @name = player
     @hit_points = 100
   end
+
+  def attack(oppo)
+    oppo.reduce
+  end
+
+  def reduce
+    @hit_points -= 10
+  end
 end
