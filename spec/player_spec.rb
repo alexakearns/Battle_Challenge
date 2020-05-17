@@ -1,12 +1,11 @@
 require 'player'
 
 describe Player do
-
-  let(:john) { Player.new("John") }
+  let(:john) { Player.new('John') }
 
   describe '#name' do
     it 'returns the players name that is entered' do
-      expect(john.name).to eq "John"
+      expect(john.name).to eq 'John'
     end
   end
 
@@ -15,5 +14,4 @@ describe Player do
       expect(john.hit_points).to eq 100
     end
   end
-
 end
