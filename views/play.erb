@@ -1,6 +1,6 @@
 <h1>Battle!</h1>
 
-<h3> <%= $player_1.name %> to battle <%= $player_2.name %> </h3>
+<h3> <%= @game.player_1.name %> to battle <%= @game.player_2.name %> </h3>
 
 <form action='/game' method='get'>
   <button type="submit">START GAME</button>
