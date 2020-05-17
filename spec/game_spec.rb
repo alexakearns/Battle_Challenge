@@ -4,6 +4,13 @@ describe Game do
 
   let(:david) { Player.new('David') }
   let(:adam) { Player.new('Adam') }
+  let(:game) { Game.new(david, adam) }
+
+  describe '#initialize' do
+    it 'accepts two player objects when new game is initializes' do
+      expect(subject.player_1).to eq 'David'
+    end
+  end
 
   describe '#attack' do
     it 'reduces opposition points by 10' do
