@@ -16,10 +16,10 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'reduces opposition points by 10' do
-      john.attack(derek)
-      expect(derek.hit_points).to eq 90
-    end
-  end
+  # describe '#attack' do
+  #   it 'reduces opposition points by 10' do
+  #     john.attack(derek)
+  #     expect(derek.hit_points).to eq 90
+  #   end
+  # end
 end
